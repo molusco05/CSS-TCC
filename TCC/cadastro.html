@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cadastro</title>
+	<style type="text/css">
+
+		 .navbar{
+   background-color: LightSlateGray;
+
+  }
+
+  .a{
+  	background-color: LightSlateGray;
+
+
+  }
+  	.myContainer {
+			background-color: lightslategray;
+			border-radius: 5px;		
+			padding: 20px;			
+		}
+
+		.card img {
+			height: 195px;
+		}
+
+		.card {
+			margin-bottom: 20px;			
+		}
+
+		label {
+			margin-top: 10px;
+		}
+
+		.cor1{
+  background-color: #2F4F4F;
+ }
+		
+
+
+	</style>
+</head>
+
+ <link rel="icon" type="icon" href="1.png">
+
+<body class="font-monospace cor1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">	
+</head>
+<body class="cor1">
+
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <i class="bi bi-geo-alt"></i>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registroPonto.html">Ponto</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Integrantes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Leticia Vitória</a></li>
+            <li><a class="dropdown-item" href="#">Monic Catharine</a></li>
+            <li><hr class="dropdown-divider"></li>
+          
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link"  aria-disabled="true" href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="buscar" placeholder="buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br><br>
+
+ <!-- container form -->
+	<div class="container myContainer rounded-4">
+
+	  <h4 class="display-4"><i class="bi bi-send"></i> cadastro </h4>	
+
+	  <p class="lead">Preecha o cadastro abaixo:</p> 
+
+	  <form class="form-floating ">
+
+<!---nome funciounou---->
+	  	<div class="row">
+	  		<div class="col-md-4 col-sm-12">
+			  	<label for="validationTextarea" class="form-label"><i class="bi bi-file-earmark-person"></i> Nome Completo:</label><br>
+			  	<input  type="nome" class="form-control " id="validationServer01" placeholder="fulano da silva" required>
+		    </div>
+
+
+<!---- email funcionou ---->
+	  		<div class="col-md-4 col-sm-12">
+			  	<label  class="form-label" for="validationTextarea" >E-Mail:</label><br>
+			  	<input type="email" class="form-control " id="" placeholder="name@example.com" value="test@example.com" required>
+			  
+		    </div> 
+<!---telefone funcionou----->
+	  		<div class="col-md-4 col-sm-12">	
+			  	<label for="validationTooltip03" class="form-label">Telefone:</label><br>
+			  	<input type="text" name="tel" class="form-control"  placeholder="(19)99999-9999" id="validationTooltip03" required>	
+		    </div>
+
+<!--   cep funcionou -->
+	  	    <div class="col-md-4 col-sm-12">
+			  	<label class="form-label" for="validationTooltip03">CEP:</label><br>
+			  	<input type="text" name="cep" class="form-control"  placeholder="digite seu CEP" id="validationTooltip03" required>
+			
+		    </div>
+
+<!---senha funcionou-->		   
+	  		<div class="col-md-4 col-sm-12">
+			  	<label class="form-label" for="validationTooltip03">Senha:</label><br>
+			  	<input  type="password" name="nome" class="form-control"  placeholder="*********" id="validationTooltip03" required>	
+		    </div>
+
+		    <div class="col-md-4 col-sm-12">	
+			  	<label class="form-label" for="validationTooltip03">RG:</label><br>
+			  	<input type="text" name="rg" class="form-control" placeholder="digite seu rg" id="validationTooltip03" required>	
+		    </div>
+
+             
+
+	    </div>
+
+
+
+	  	  		  		  	  		  	
+
+	  	
+
+	    <div class="col-md-2 col-sm-12">
+			  	<label class="form-label"  for="validationTooltip03">Tipo:</label><br>
+			  	<select class="form-select" id="validationTooltip03" required>
+			  		<option></option>
+					<option>Gerente</option>	  		
+					<option>Funcionario</option>			
+			  	</select>
+		    </div>
+
+	  	<br>
+
+	  	<button class="btn btn-danger"><i class="bi bi-send"></i> Enviar</button>	  	
+	  	<button class="btn btn-danger"><i class="bi bi-x-circle"></i> Limpar</button>
+
+	
+</form>  
+
+<!-- fim form -->
+
+	 
+	</div> 
+	<br><br><br> 
+	<div class="conteudo-principal-escrito-subtitulo font-monospace shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      
+	<!--gutters-->
+
+	<div class="container text-center">
+	
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col">
+      <div class="p-3">
+<img src="imgCadastro.jpg"></img>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+<img src="img2Cadastro.jpg"></img>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+
+<img src="img3Cadastro.jpg" ></img>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+<img src="img4Cadastro.jpg"></img>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3">
+      	
+<img src="img5Cadastro.png"></img>
+
+     
+</div>
+</div>
+
+
+	
+</body>
+ 
+</html>
